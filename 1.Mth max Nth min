@@ -1,0 +1,35 @@
+#include<stdio.h>
+int main()
+{
+	int a[10],i,mx,mn,n,s,d;
+	printf("ENTER THE NUMBER OF VALUES:");
+	scanf("%d",&n);
+	printf("ENTER THE ELEMENTS:");
+	for(i=0;i<n;i++)
+	{
+	scanf("%d",&a[i]);
+	}
+	mx=a[0];
+	mn=a[0];
+	for(i=0;i<n;i++)
+	{
+    if(mx<a[i])
+	{
+    mx=a[i];
+	}
+}
+printf("THE MAXMIMAM ELEMENT IS :%d\n",mx);
+for(i=0;i<n;i++)
+	{
+ if (mn>a[i])
+	{
+    mn=a[i];
+    
+	}
+}
+	printf("THE MIMIMAM VALUE :%d\n",mn);
+	d=mx-mn;
+	printf("DIFFERENCE=%d\n",d);
+	s=mx+mn;
+	printf("SUM=%d\n",s);
+}
